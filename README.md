@@ -10,30 +10,30 @@ For a streamlined review of the results, please open:
 ### Reproducing the Training
 The repository includes pre-trained weights to facilitate quick evaluation.
 * **Weights Location:**
-    * `CW2-Poster/Nepal_repro.keras`
-    * `CW2-Poster/Amazon_repro.keras`
+    * `25229117-Kedziora-CW2-Poster/my_full_export/CW2-Poster/Nepal_repro.keras`
+    * `25229117-Kedziora-CW2-Poster/my_full_export/CW2-Poster/Amazon_repro.keras`
 
 **To Retrain from Scratch:**
-If you wish to reproduce the full training pipeline for grading, please move the `.keras` files mentioned above to the `CW2-Poster/keras_holder_folder`.
+If you wish to reproduce the full training pipeline for grading, please move the `.keras` files mentioned above to the `25229117-Kedziora-CW2-Poster/my_full_export/CW2-Poster/keras_holder_folder`.
 
 > **Note:** Training is computationally intensive. It may take approximately **45–60 minutes** on a standard T4 GPU due to the high number of steps per epoch configured for robust convergence.
 
 ## Repository Structure
-The core implementation files are located in `CW2-Poster/code/`:
+The core implementation files are located in `25229117-Kedziora-CW2-Poster/my_full_export/CW2-Poster/code/`:
 
-* **`CW2-Poster/code/replicate_amazon.py`**
+* **`../code/replicate_amazon.py`**
     * **Purpose:** Replicates the baseline Attention U-Net methodology on the Amazon RGB dataset.
     * **Key Action:** Implements the Attention Gate mechanism and U-Net architecture exactly as described in the original paper.
 
-* **`CW2-Poster/code/nepal_eda.py`**
+* **`../code/nepal_eda.py`**
     * **Purpose:** Performs Exploratory Data Analysis (EDA) on the Himalayan dataset.
     * **Key Action:** Analyses pixel intensity distributions to identify domain shifts between the high-contrast "false-colour" training data and the natural "true-colour" target data.
 
-* **`CW2-Poster/code/adapt_nepal.py`**
+* **`../code/adapt_nepal.py`**
     * **Purpose:** Adapts the model for the Himalayan context.
     * **Key Adaptation:** Modifies the architecture (mixed precision, grayscale input, CLAHE preprocessing) to handle the specific challenges of the Tsho Rolpa region.
 
-* **`CW2-Poster/code/monitor_tsho_rolpa.py`**
+* **`../code/monitor_tsho_rolpa.py`**
     * **Purpose:** **(Bonus Work)** Executes a longitudinal analysis of the Tsho Rolpa glacial lake.
     * **Key Action:** Tracks the lake's surface area evolution over time using the adapted model to quantify expansion risks.
 
