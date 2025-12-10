@@ -18,6 +18,8 @@ If you wish to reproduce the full training pipeline for grading, please move the
 
 > **Note:** Training is computationally intensive. It may take approximately **45–60 minutes** on a standard T4 GPU due to the high number of steps per epoch configured for robust convergence.
 
+> **Data Note:** Raw datasets are retained in this submission to ensure scripts run out-of-the-box for grading without external downloads. These will be removed via .gitignore for the public release to reduce file size.
+
 ## Repository Structure
 The core implementation files are located in `25229117-Kedziora-CW2-Poster/my_full_export/CW2-Poster/code/`:
 
@@ -59,4 +61,5 @@ This project will be open-sourced shortly on my GitHub to contribute to the comm
 * **Himalayas Dataset:** Shrestha, A. (n.d.). Glacial Lake Dataset. Kaggle. https://www.kaggle.com/datasets/aatishshresthaa/glacial-lake-dataset [Accessed: 10 December 2025].
 
 ### Original Code Repository
+
 * John, D. (2022). *attention-mechanism-unet* [Source Code]. GitHub. https://github.com/davej23/attention-mechanism-unet
